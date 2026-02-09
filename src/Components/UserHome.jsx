@@ -39,10 +39,16 @@ const UserHome = () => {
     }
 
     useEffect(()=>{
-         products.length!==0 && initializingProducts()
-    },[products])
+        //  products.length!==0 && initializingProducts()
+        if (!products || products.length === 0) return;
 
-    useEffect(()=>{},[])
+        if (width <= 430) {
+          setShow(products.length >= 4 ? 4 : products.length);
+        } else {
+          setShow(products.length >= 5 ? 5 : products.length);
+        }
+    },[products, width])
+
 
    
   return (

@@ -1,6 +1,5 @@
 import styles from '../Styles/categorycard.module.css'
-import { useContext, useEffect, useState, useRef } from "react"
-import { FetchUser, UpdateCart, UpdateFavorites } from '../contextAPI/UserProvider'
+import { useState } from "react"
 import { useNavigate } from 'react-router-dom'
 
 
@@ -54,18 +53,9 @@ const CategoryCard = ({product}) => {
         return `rgb(${clamp(r)}, ${clamp(g)}, ${clamp(b)})`;
         };
 
-    // const handleRightIndicator = ()=>{
-    //   indicator<imgsMaxIndex && indicator>=0 ? setIndicator(indicator+1) : setIndicator(0)
-    // }
-
-    // const handleLeftIndicator = ()=>{
-    //   indicator<=imgsMaxIndex && indicator>0 ? setIndicator(indicator-1) : setIndicator(imgsMaxIndex)
-    // }
-
   return (
         <div key={product._id} className={styles.tallcard}>
             <div className={styles.imgcontainer} onClick={()=>{navTo(`/user/products/${product._id}`); window.scrollTo({top:0, behavior:'smooth'})}}>
-                {/* <button className={styles.l_indicator} onClick={handleLeftIndicator}>{`<`}</button>< button className={styles.r_indicator} onClick={handleRightIndicator}>{`>`}</button> */}
                 <div className={styles.imgbg}  style={{ backgroundColor: fillColor }}></div>
                 <img src={product.images[indicator]} alt="network error" className={styles.imgforimg} crossOrigin="anonymous"
                 onLoad={(e) => {

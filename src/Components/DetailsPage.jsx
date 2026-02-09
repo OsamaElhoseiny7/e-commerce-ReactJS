@@ -36,7 +36,7 @@ const DetailsPage = () => {
          <div className={styles.suggestions}>
            {category.length!==0 &&
            <>
-           <h2>You might also like</h2>
+           <h3>You might also like</h3>
            <div className={styles.categorycontainer}>
              {category?.map((product)=><CategoryCard product={product}/>)}
            </div>

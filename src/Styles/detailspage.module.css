@@ -12,6 +12,7 @@ hr.page{
     margin-right: 0px;
     height: 1px;
     background-color: whitesmoke;
+    
 }
 
 .suggestions{
@@ -33,6 +34,14 @@ hr.page{
     margin-top: 25px;
     margin-bottom: 40px;
     /* background-color: rebeccapurple; */
+}
+
+@media(max-width:430px){
+    .categorycontainer{
+        height: 200px;
+        margin: 15px 0px 25px;
+    }
+    
 }
 
 

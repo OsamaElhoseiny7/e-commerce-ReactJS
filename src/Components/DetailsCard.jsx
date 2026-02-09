@@ -99,24 +99,27 @@ const DetailsCard = ({product}) => {
 
   return (
     <>
-        <div key={product?._id} className={styles.widecard}>
-            <div className={styles.preview}>
-                {product?.images?.map((image)=>{
-                    return (
-                        <div className={styles.container} onMouseOver={()=>{setImage(image);}}>
-                            <img src={image} alt="no internet network" />
-                        </div>
-                    )
-                })}
+        <div className={styles.widecard}>
+            <div className={styles.imgblock}>
+                <div className={styles.preview}>
+                    {product?.images?.map((image)=>{
+                        return (
+                            <div className={styles.container} onMouseOver={()=>{setImage(image);}}>
+                                <img src={image} alt="no internet network" />
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className={styles.imgcontainer} style={{ backgroundColor: fillColor }}>
+                    {/* <div className={styles.imgbg}  ></div> */}
+                    <img src={image} alt="network error" className={styles.widecardimg} crossOrigin="anonymous"
+                    onLoad={(e) => {
+                    const color = extractFillColor(e.target);
+                    setFillColor(color);
+                    }} />
+                </div>
             </div>
-             <div className={styles.imgcontainer} style={{ backgroundColor: fillColor }}>
-                 {/* <div className={styles.imgbg}  ></div> */}
-                <img src={image} alt="network error" className={styles.widecardimg} crossOrigin="anonymous"
-                onLoad={(e) => {
-                const color = extractFillColor(e.target);
-                setFillColor(color);
-                }} />
-            </div>
+             
             <div className={styles.widecardData}>
                 <p className={styles.title}>{product?.title}</p>
                 <hr />
@@ -162,7 +165,7 @@ const DetailsCard = ({product}) => {
                 </div>
                 <hr />
                 <div className={styles.moredetails}>
-                    <h2>About this item</h2>
+                    <h3>About this item</h3>
                     <ul>
                         {product?.description?.map(detail=><li>{detail}</li>)}
                     </ul>

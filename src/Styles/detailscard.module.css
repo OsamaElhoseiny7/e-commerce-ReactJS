@@ -1,21 +1,29 @@
 .widecard{
-    width:98%;
+    width:99%;
     background-color: rgb(39, 38, 38);
-    margin: 50px 1% 50px;
+    margin: 50px 0.3% 50px;
     display: flex;
     position: relative;
     /* background-color: rebeccapurple; */
 }
 
+.imgblock{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    height: 80vh;
+    top:0px;
+    /* background-color: gray; */
+}
+
 .preview{
-    width: 4%;
-    height: 540px;
+    width: 12%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: sticky;
-    top:0px;
     /* background-color: rebeccapurple; */
 }
 
@@ -27,8 +35,6 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(181, 178, 178);
-    /* margin-left: 5%;
-    margin-right: 15%; */
     border-radius: 10px;
     border: 1px white solid;
     cursor: pointer;
@@ -46,14 +52,12 @@
 }
 
 .imgcontainer{
-    width: 29%;
-    height: 540px;
+    width: 88%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s ease;
-    position: sticky;
-    top:0px;
     /* background-color: rebeccapurple; */
 }
 
@@ -109,10 +113,6 @@
     color: white;
     font-weight: 550;
 }
-
-/* .size{
-    margin-bottom: 18px;
-} */
 
 hr.card{
     border: none;
@@ -182,11 +182,11 @@ hr.card{
 
 .cartbtn p{
     width: 35%;
-    /* background-color: aquamarine; */
     display: flex;
     font-weight: 600;
     justify-content: center;
     align-items: center;
+    /* background-color: aquamarine; */
 }
 
 
@@ -241,4 +241,127 @@ hr.card{
     z-index: 9999;
     font-size: 30;
     opacity: 0.2;
+}
+
+/* here is mobile version */
+
+@media(max-width:430px){
+    
+    .widecard{
+        width:98%;
+        margin: 20px 1%;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: rebeccapurple; */
+    }
+
+    .imgblock{
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 5px;
+}
+    
+    .preview{
+        width: 100%;
+        height: 6%;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        overflow-x: auto;
+    }
+    
+    .preview .container{
+        width: 10%;
+        height: 100%;
+        border-radius: 0px;
+        margin-right: 6px;
+        flex-shrink: 0;
+        margin-bottom: 0px;
+    }
+    
+    .container img{
+        border-radius: 2px;
+    }
+    
+    .imgcontainer{
+        width: 100%;
+        height:93%;
+    }
+        
+    .widecardData{
+        width:98%;
+        margin-left: 0px;
+    }
+    
+    .widecardData .title{
+        max-width: 100%;
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    .price{
+        margin-top: 10px;
+        font-size: 10px;
+        margin-top: 12px;
+    }
+    
+    .price p{
+        font-size: 16px;
+        margin-left: 2px;
+        font-weight: 600;
+    }
+    
+    .colors, .size{
+        font-size: 13px;
+        margin-top: 12px;
+    }
+    
+    .widecardData .btns{
+        height: 5vh;
+        margin-top: 15px;
+        margin-bottom: 12px;
+    }
+    
+    .cartbtn{
+        width: 25%;
+        height: 85%;
+    }
+    
+    .addtocart button{
+        font-size: 14px;
+    }
+    
+    .cartbtn p{
+        font-size: 14px;
+    }
+    
+    
+    .btns .favbtn{
+        width: fit-content;
+        height: 80%;;
+        margin-right: 2%;
+    }
+    
+    .favbtn svg{
+        width: 23px;
+        height: 23px;
+    }
+    
+    .moredetails{
+        margin-top: 12px;
+    }
+    
+    .moredetails ul{
+        margin-top: 10px;
+    }
+    
+    .moredetails ul li{
+        font-size: 11px;
+    }
 }
