@@ -69,7 +69,7 @@
     font-size: 18px;
     font-weight: 500;
     margin: 0px 4px 0px 2px;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
 }
 
 @media(max-width:430px){
