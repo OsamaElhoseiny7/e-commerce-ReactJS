@@ -1,0 +1,197 @@
+.widecard{
+    width:100%;
+    height: 36vh;
+    /* background-color: grey; */
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px whitesmoke solid;
+    position: relative;
+
+}
+
+.imgcontainer{
+    width: 20%;
+    height: 83%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    /* background-color: rebeccapurple; */
+}
+
+/* .imgcontainer .imgbg{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+} */
+
+
+.imgcontainer .imgbg{
+    position: absolute;
+    inset: 0;
+    transition: background-color 0.3s ease;
+}
+
+
+.imgcontainer .widecardimg{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    z-index: 1000;
+}
+
+
+.price{
+    width: 8%;
+    align-self: flex-start;
+    margin-top: 2%;
+    /* background-color: rebeccapurple; */
+}
+
+.price p{
+    width: 100%;
+    text-align: end;
+    font-size: 24px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.widecardData{
+    width:66%;
+    margin-right: 2%;
+    height: 83%;
+    margin-bottom: 1%;
+    /* background-color: green; */
+    color: rgb(234, 234, 234);
+}
+
+.widecardData .title{
+    width: 100%;
+    font-size: 25px;
+    max-height: calc(35px*2);
+    letter-spacing: 1px;
+    /* background-color: blue; */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    cursor: pointer;
+}
+
+.colors{
+    /* background-color: yellowgreen; */
+    font-size: 20px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.widecardData .btns{
+    width: 28%;
+    height: 19%;
+    margin-top: 20px;
+    /* box-shadow: 0px 0px 8px rgba(83, 81, 81, 0.734); */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    /* background-color: blue; */
+}
+
+
+.cartbtn{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    border: 3px green solid;
+    border-radius: 20px;
+    /* background-color: rebeccapurple; */
+}
+
+.btns .addtocart{
+    border: 0px;
+}
+
+.cartbtn button{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.addtocart button{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: green;
+    border-radius: 20px;
+}
+
+.cartbtn button svg{
+    fill: whitesmoke;
+    width: 35px;
+    height: 35px;
+}
+
+.cartbtn button svg.trash{
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+}
+
+.cartbtn p{
+    width: 35%;
+    /* background-color: aquamarine; */
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btns .favbtn{
+    width: 25%;
+    height: 75%;
+    border-width: 0px;
+    border-radius: 12px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 6%;
+}
+
+.favbtn svg{
+    width: 32px;
+    height: 32px;
+}
+
+.cartbtn svg{
+    margin-right: 6px;
+    width: 30px;
+    height: 30px;
+}
+
+.uploading{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(142, 140, 140);
+    z-index: 9999;
+    font-size: 30;
+    opacity: 0.2;
+}

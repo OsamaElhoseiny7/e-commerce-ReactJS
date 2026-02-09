@@ -1,0 +1,104 @@
+.tallcard{
+    display: inline-flex;
+    flex-direction: column ;
+    width: 180px;
+    background-color: rgb(27, 25, 25);
+    height: 340px;
+    flex-shrink: 0;
+    position: relative;
+    margin-top: 0px;
+    margin-right: 5px;
+}
+
+.tallcard .imgcontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    position: relative;
+    cursor: pointer;
+}
+
+.imgcontainer .imgbg{
+    position: absolute;
+    inset: 0;
+    transition: background-color 0.3s ease;
+}
+
+.imgcontainer .imgforimg{
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 999;
+}
+
+.imgcontainer .l_indicator, .imgcontainer .r_indicator{
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    width: 9%;
+    height: 14%;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.4;
+    border-width: 0px;
+    border-radius: 4px;
+    background-color: rgb(50, 48, 48);
+    color: whitesmoke;
+    z-index: 1000;
+}
+
+.imgcontainer .l_indicator:hover, .imgcontainer .r_indicator:hover{
+    opacity: 0.8;
+}
+
+.imgcontainer .l_indicator{
+    left: 3%;
+}
+
+.imgcontainer .r_indicator{
+    right: 3%;
+}
+
+
+.title{
+    width: 92%;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 3%;
+    color: rgb(234, 234, 234);
+    margin-left: 3%;
+    overflow:hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    cursor: pointer;
+    /* background-color: rgb(35, 149, 17); */
+}
+
+.title:hover{
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+.price{
+    display: flex;
+    max-width: 92%;
+    width:fit-content;
+    margin-left: 4%;
+    margin-top: 6%;
+    color: white;
+    /* background-color: gray; */
+}
+
+.price .h1price{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px 4px 0px 2px;
+    /* background-color: rebeccapurple; */
+}
+
+
+

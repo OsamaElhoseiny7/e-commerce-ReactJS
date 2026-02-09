@@ -1,0 +1,92 @@
+.vehiclescontainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    position: relative;
+    margin: 40px 2.5% 0px;
+    justify-content: space-between;
+    background-color: rgb(27, 25, 25);
+    /* margin-bottom: 40px; */
+    /* padding-left: calc(5%/6);  */
+}
+
+.vehiclescontainer .blocktitle{
+    height: 6vh;
+    margin-bottom: 25px;
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(234, 234, 234);
+    margin-top: 30px;
+    margin-left:3.5%;
+    /* background-color: red; */
+}
+
+.vehiclescontainer .cardscontainer{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: green; */
+    width: 94%;
+    margin-left: 3.5%;
+}
+
+.uploading{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(142, 140, 140);
+    z-index: 9999;
+    font-size: 30;
+    opacity: 0.3;
+}
+
+.showmore{
+    width: 92%;
+    height: 4vh;
+    margin-bottom: 40px;
+    margin-left: 3.5%;
+    /* background-color: rebeccapurple; */
+}
+
+.showmore button{
+    width: 8%;
+    height: 100%;
+    font-size: 20px;
+    background-color: transparent;
+    text-decoration: underline;
+    border-width: 0px;
+    letter-spacing: 1px;
+    color: rgb(234, 234, 234);
+}
+
+.showmore button:hover{
+    color: rgb(152, 150, 150);
+}
+
+@media(max-width:430px){
+    .vehiclescontainer .cardscontainer{
+        justify-content: space-between;
+    }
+    .vehiclescontainer .blocktitle{
+        font-size: 18px;
+        height: 4vh;
+        margin: 10px 3.5%;
+    }
+
+    .showmore{
+        margin-top: 5px;
+    }
+
+    .showmore button{
+        width: 35%;
+        margin-left: calc(65%/2);
+        background-color: green;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 15px;
+    }
+}
+
+

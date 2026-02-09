@@ -1,0 +1,113 @@
+.cart{
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 40px;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart .left{
+    width: 76.5%;
+    background-color: rgb(27, 25, 25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    /* background-color: blue; */
+}
+
+.cart .right{
+    width: 22%;
+    height: 23vh;
+    background-color: rgb(27, 25, 25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    height: 20%;
+    margin: 12% 0% 6%;
+    /* background-color: green; */
+    text-align: center;
+    color: whitesmoke;
+    width: 90%;
+}
+
+.right p span{
+    font-weight: 550;
+}
+
+.right .proceedbtn{
+    width: 84%;
+    height: 21%;
+    font-size: 17px;
+    font-weight: 550;
+    border-radius: 20px;
+    border: 0px;
+    background-color: green;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+
+.left .cartTitle{
+    width: 95%;
+    height: 7vh;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: flex;
+    color: rgb(234, 234, 234);
+    /* background-color: aquamarine; */
+}
+
+.left hr{
+    border: none;
+    width: 95%;
+    height: 0.5px;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+.cartTitle svg{
+    margin-right: 20px;
+    fill: rgb(2, 112, 2);
+    width: 45px;
+    height: 45px;
+}
+
+.left .cartcontainer{
+    width: 95%;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left .subtotal{
+    align-self: flex-end;
+    /* background-color: green; */
+    margin-right: 2.5%;
+    font-size: 22px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    text-align: end;
+    color: whitesmoke;
+    letter-spacing: 1px;
+}
+
+.subtotal span{
+    font-weight: 600;
+     font-size: 22px;
+}
+
+
+
+
+

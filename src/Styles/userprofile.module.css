@@ -1,0 +1,490 @@
+.profilecontainer{
+    width: 92%;
+    margin-left: 4%;
+    border-radius: 30px;
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.leftblock{
+    width: 75%;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+.rightblock{
+    width: 23%;
+    border-radius: 30px;
+    margin-left: 2%;
+}
+
+.leftblock .profileimg{
+    width: 100%;
+    height: 35vh;
+    background-color: rgb(27, 25, 25);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 20px black;
+}
+
+.profileimg .leftimg{
+    width: 65%;
+    height: 75%;
+    margin-left: 2%;
+    margin-bottom: 10px;
+    display: flex;
+    position: relative;
+    /* background-color: rgb(208, 201, 201); */
+}
+
+.leftimg label{
+    cursor: pointer;
+    background-color: rgb(39, 38, 38);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 145px;
+    top: 83%;
+    border-radius: 50%;
+    border: 2px whitesmoke solid;
+    z-index: 999;
+}
+
+.leftimg label svg{
+    width: 70%;
+    height: 70%;
+    fill: rgb(234, 234, 234);
+}
+
+.leftimg .profileimgcontainer{
+    width: 195px;
+    height: 195px;
+    margin-right: 2%;
+    background-size: cover;
+    /* background-size: contain; */
+    border-radius: 50%;
+    /* background-color: rgb(198, 196, 196); */
+}
+
+.leftimg svg{
+    width: 195px;
+    height: 195px;
+    fill: rgb(228, 225, 225);
+}
+
+.leftimg .imgtext{
+    width: 65%;
+    height: 45%;
+    margin-left: 10px;
+    color: rgb(234, 234, 234);
+    /* background-color: aqua; */
+}
+
+.imgtext .name{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 550;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+    /* background-color: green; */
+    height: 40%;
+}
+
+.imgtext .email{
+    width: 100%;
+    font-size: 18px;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    /* background-color: goldenrod; */
+}
+
+.email svg{
+    width: 17px;
+    height: 17px;
+    fill: rgb(234, 234, 234);
+    margin-right: 6px;
+    margin-left: 0.6%;
+    margin-top: 1%;
+}
+
+.profileimg .rightimg{
+    width: 23%;
+    height: 16%;
+    margin-right: 3%;
+    align-self: flex-start;
+    margin-top:4%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(215, 207, 207); */
+}
+
+.rightimg .savebtn, .rightimg .cancelbtn{
+    height: 100%;
+    border-width: 0px;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.rightimg .savebtn{
+    width: 60%;
+    background-color: rgba(0, 128, 0, 0.686);
+    color: rgb(234, 234, 234);
+    border-radius: 20px;
+}
+
+.rightimg .cancelbtn{
+    width: 35%;
+    border-radius: 20px;
+    background-color: rgb(39, 38, 38);
+    color: rgb(234, 234, 234);
+    box-shadow: 0px 0px 4px rgba(128, 128, 128, 0.625);
+}
+
+.userinfo{
+    width: 100%;
+    height: 45vh;
+    margin-top: 50px;
+    background-color: rgb(27, 25, 25);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px black;
+}
+
+.userinfo p, .password p{
+    width: 100%;
+    height: 21%;
+    background-color: rgb(40, 38, 38);
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    color: rgb(234, 234, 234);
+}
+
+.userinfo p{
+    height: 16%;
+    font-weight: 550;
+}
+
+.userinfo .edituser{
+    width: 92%;
+    height: 65%;
+    margin-top: 3%;
+    margin-left: 4%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: gold; */
+}
+
+.edituser .left, .edituser .right{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: blue; */
+}
+
+.edituser .left{
+    width: 46%;
+}
+
+.edituser .right{
+    width: 48%;
+}
+
+.right .top, .right .bottom, .left .top, .left .bottom{
+    width: 100%;
+    height: 48%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    /* background-color: rgb(180, 175, 175); */
+}
+
+.edituser label, .edituser  input{
+    width: 100%;
+}
+
+.edituser p{
+    /* background-color: red; */
+    border-radius: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    height: 20%;
+    margin-top: 2px;
+    background-color: transparent;
+    color: rgb(213, 60, 60);
+}
+
+.edituser label{
+    height: 35%;
+    font-weight: 550;
+    font-size: 18px;
+    letter-spacing: 1px;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    color: rgb(234, 234, 234);
+    /* margin-bottom: 5px   ; */
+}
+
+.edituser input{
+    height: 45%;
+    outline:0px solid;
+    border-width: 0px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px black;
+    padding: 0px 10px;   
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(39, 38, 38);
+    color: rgb(234, 234, 234);
+    /* background-color: rgba(245, 245, 245, 0.778); */
+    
+}
+
+.edituser .right .bottom{
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: green; */
+}
+
+.edituser .right .bottom .left, .edituser .right .bottom .right{
+    width: 48%;
+    height: 80%;
+    color: black;
+    /* background-color: rebeccapurple; */
+}
+
+.edituser .right .bottom select{
+    height: 55%;
+    outline-width: 0px;
+    border-width: 0px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 1px black;
+    padding: 0px 10px;   
+    font-size: 17px;
+    padding-right: 10px;
+    background-color: rgb(39, 38, 38);
+    color: rgb(231, 230, 230);
+}
+
+
+.password{
+    width: 100%;
+    height: 25vh;
+    margin-top: 50px;
+    background-color: rgb(27, 25, 25);
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px black;
+    /* box-shadow: 0px 0px 4px rgb(125, 123, 123); */
+}
+
+.password p{
+    height: 30%;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.password div{
+    width: 92%;
+    margin-left: 4%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.password div input{
+    height: 40%;
+    width: 32%;
+    outline: 0px;
+    border-width: 0px;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-size: 18px;
+    font-weight: 550;
+    background-color: rgb(39, 38, 38);
+    color: rgb(234, 234, 234);
+    margin-top: 1.5%;
+}
+
+.password div input[type='button']{
+    padding: 0px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: rgba(0, 128, 0, 0.686);
+    color: rgb(234, 234, 234);
+    cursor: pointer;
+    margin-top: 4%;
+    border: 0px;
+}
+
+.rightblock .fav, .rightblock .cart{
+    width: 100%;
+    height: 57vh;
+    background-color: rgb(27, 25, 25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px black;
+}
+
+.fav .head, .cart .head{
+    height: 8%;
+    font-size: 23px;
+    font-weight: 600;
+    width: 85%;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    /* border-top-left-radius: 12px;
+    border-top-right-radius: 12px; */
+    color: rgb(234, 234, 234);
+    /* background-color: gray; */
+}
+
+.fav .head svg{
+    width: 23px;
+    height: 23px;
+    fill: rgb(207, 62, 62);
+    margin-right: 10px;
+}
+
+.imgcontainer{
+    width: 85%;
+    height: 50%;
+    margin-bottom: 3%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    /* background-color: rgb(198, 196, 196); */
+}
+
+/* .imgcontainer .imgbg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px);
+} */
+ .imgcontainer .imgbg{
+    position: absolute;
+    inset: 0;
+    transition: background-color 0.3s ease;
+}
+
+.imgcontainer .widecardimg{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    z-index: 999;
+}
+
+.fav .title, .cart .title{
+    width: 85%;
+    max-height: 11%;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(234, 234, 234);
+    overflow:hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    cursor: pointer;
+    /* background-color: rebeccapurple ; */
+}
+
+.fav .price, .cart .price{
+    width: 86%;
+    height: 7%;
+    font-size: 22px;
+    font-weight: 550;
+    letter-spacing: 1px;
+    color: rgb(234, 234, 234);
+    margin-top: 3%;
+    /* background-color: aliceblue; */
+}
+
+.cart .empty, .fav .empty{
+    width: 86%;
+    height: 60%;
+    background-color: rgb(39, 38, 38);
+    border-radius: 20px;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0px;
+}
+
+.fav button, .cart button{
+    width: 86%;
+    height: 8%;
+    margin-top: 5%;
+    border-width: 0px;
+    border-radius: 15px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    padding-bottom: 4px;
+    background-color: rgb(39, 38, 38);
+    color: rgb(234, 234, 234);
+    box-shadow: 0px 0px 4px rgb(78, 76, 76);
+    cursor: pointer;
+}
+
+.fav button:hover, .cart button:hover{
+    background-color: rgba(0, 128, 0, 0.686);
+    box-shadow: 0px 0px 6px transparent;
+    color: rgb(234, 234, 234);
+}
+
+.rightblock .cart{
+    margin-top: 30px;
+}
+
+.uploading{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(142, 140, 140);
+    z-index: 9999;
+    font-size: 30;
+    opacity: 0.2;
+}
+
+

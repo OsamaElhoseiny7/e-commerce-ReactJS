@@ -1,0 +1,244 @@
+.widecard{
+    width:98%;
+    background-color: rgb(39, 38, 38);
+    margin: 50px 1% 50px;
+    display: flex;
+    position: relative;
+    /* background-color: rebeccapurple; */
+}
+
+.preview{
+    width: 4%;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    /* background-color: rebeccapurple; */
+}
+
+.preview .container{
+    width: 60%;
+    height: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(181, 178, 178);
+    /* margin-left: 5%;
+    margin-right: 15%; */
+    border-radius: 10px;
+    border: 1px white solid;
+    cursor: pointer;
+}
+
+.active{
+    outline: 2px greenyellow solid;
+}
+
+.container img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.imgcontainer{
+    width: 29%;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    position: sticky;
+    top:0px;
+    /* background-color: rebeccapurple; */
+}
+
+.imgcontainer .widecardimg{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+.widecardData{
+    width:60%;
+    margin-left: 2.5%;
+    /* background-color: goldenrod; */
+    color: rgb(234, 234, 234);
+}
+
+.widecardData .title{
+    max-width: 94%;
+    height: fit-content;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+    margin-top: 10px;
+    /* background-color: blue; */
+}
+
+.price{
+    width: fit-content;
+    display: flex;
+    align-self: flex-start;
+    margin-top: 2%;
+    /* background-color: rebeccapurple; */
+    font-size: 14px;
+    margin-top: 22px;
+    color: white;
+}
+
+.price p{
+    font-size: 28px;
+    margin-left: 2px;
+}
+
+.colors, .size{
+    font-size: 16px;
+    width: fit-content;
+    margin-top: 15px;
+    /* background-color: yellowgreen; */
+}
+
+.colors span, .size span{
+    text-transform: capitalize;
+    color: white;
+    font-weight: 550;
+}
+
+/* .size{
+    margin-bottom: 18px;
+} */
+
+hr.card{
+    border: none;
+    width: 100%;
+    height: 1px;
+    background-color: whitesmoke;
+}
+
+.widecardData .btns{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+
+.cartbtn{
+    width: 22%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    border: 3px green solid;
+    border-radius: 20px;
+    /* background-color: rebeccapurple; */
+}
+
+.btns .addtocart{
+    border: 0px;
+}
+
+.cartbtn button{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.addtocart button{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: green;
+    border-radius: 20px;
+}
+
+.cartbtn button svg{
+    fill: whitesmoke;
+    width: 35px;
+    height: 35px;
+}
+
+.cartbtn button svg.trash{
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+}
+
+.cartbtn p{
+    width: 35%;
+    /* background-color: aquamarine; */
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btns .favbtn{
+    width: fit-content;
+    height: 75%;
+    border-width: 0px;
+    border-radius: 12px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 6%;
+}
+
+.favbtn svg{
+    width: 35px;
+    height: 35px;
+}
+
+.cartbtn svg{
+    margin-right: 6px;
+    width: 30px;
+    height: 30px;
+}
+
+.moredetails{
+    margin-top: 15px;
+    width: 100%;
+    /* background-color: brown; */
+}
+
+.moredetails ul{
+    width: 97%;
+    margin-left: 3%;
+    margin-top: 15px;
+    /* background-color: brown; */
+}
+
+.moredetails ul li{
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.uploading{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(142, 140, 140);
+    z-index: 9999;
+    font-size: 30;
+    opacity: 0.2;
+}

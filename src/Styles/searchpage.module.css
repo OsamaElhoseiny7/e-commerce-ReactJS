@@ -1,0 +1,77 @@
+.searchcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    position: relative;
+    margin: 40px 2.5% 0px;
+    background-color: rgb(27, 25, 25);
+}
+
+.searchcontainer .cardscontainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    position: relative;
+    /* margin: 30px 2.4% 0px 3.6%; */
+    width: 94%;
+    margin-left: 3.5%;
+    /* background-color: rebeccapurple; */
+}
+
+.searchcontainer .blocktitle{
+    height: 6vh;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-left:3.5%;
+    margin-right: 60%;
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(234, 234, 234);
+    /* background-color: red; */
+}
+
+.uploading{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(142, 140, 140);
+    z-index: 9999;
+    font-size: 30;
+    opacity: 0.3;
+}
+
+.showmore{
+    width: 93%;
+    height: 4vh;
+    margin-left: 3.5%;
+    margin-bottom: 50px;
+    /* background-color: rebeccapurple; */
+}
+
+.showmore button{
+    width: 8%;
+    height: 100%;
+    font-size: 20px;
+    background-color: transparent;
+    text-decoration: underline;
+    border-width: 0px;
+    letter-spacing: 1px;
+    color: rgb(234, 234, 234);
+}
+
+.showmore button:hover{
+    color: rgb(152, 150, 150);
+}
+
+.none{
+    display: none;
+}
+
+@media(max-width){
+    
+}
+
+

@@ -1,0 +1,165 @@
+.newvehicle{
+    width: 42%;
+    /* margin-left: 13%; */
+    height: 92vh;
+    display: flex;
+    position: fixed;
+    left: 40%;
+    top: 4vh;
+}
+
+.newvehicle .addvehicle_form {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(27, 25, 25);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addvehicle_form h1{
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(234, 234, 234);
+}
+
+.addvehicle_form hr{
+    width: 50%;
+    margin-top: 10px;
+}
+
+.addvehicle_form .ginput, input[type='submit']{
+    display: block;
+    width: 80%;
+    height: 6%;
+    border-radius: 6px;
+    outline:0px;
+    border-width: 0px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 3px 10px;
+    text-align: center;
+    color: rgb(234, 234, 234);
+    background-color: rgb(39, 38, 38);
+}
+
+
+.addvehicle_form .imglabel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 6%;
+    border-radius: 6px;
+    outline-width:0px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 3px 10px;
+    background-color: rgb(39, 38, 38);
+    color: rgb(234, 234, 234);
+}
+
+.addvehicle_form .previewImg{
+    width: 80%;
+    height: 22%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px rgb(144, 186, 15) solid; */
+    border-radius: 15px;
+    background-color: rgb(39, 38, 38);
+    padding: 4px 0px;
+    color: rgb(234, 234, 234);
+}
+.previewImg img{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.indicator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1%;
+    width: 80%;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
+.indicator div{
+    height: 100%;
+    width: 4%;
+    border-radius: 4px;
+    background-color: rgb(61, 59, 59);
+    color: rgb(234, 234, 234);
+    margin-left: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.indicator .active{
+    width: 5%;
+    background-color: rgb(39, 38, 38);
+}
+
+.addvehicle_form input[type='submit']{
+    width: 20%;
+    background-color: rgb(234, 234, 234);
+    border-radius:8px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: black;
+    font-weight: 700;
+    
+}
+
+.addvehicle_form input[name='imgsUrl']{
+    display: none;
+}
+
+.category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 6%;
+    border-radius: 6px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    background-color: rgb(39, 38, 38);
+    color: rgb(234, 234, 234);
+}
+
+.category .bike, .category p, .category .car{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: blue; */
+    height: 90%;
+}
+
+.category .car{
+    width: 10%;
+    margin-left: 10px;
+    
+}
+
+.category p{
+    width: 20%;
+    margin-left: 5px;
+}
+
+.category .bike{
+    width: 12%;
+    margin-left: 20px;
+}
+
+
+
+

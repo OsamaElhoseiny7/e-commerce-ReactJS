@@ -1,0 +1,38 @@
+.detailspage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: grey; */
+}
+
+hr.page{
+    border: none;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 0px;
+    height: 1px;
+    background-color: whitesmoke;
+}
+
+.suggestions{
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 25px;
+    color: whitesmoke;
+    /* background-color: rebeccapurple; */
+}
+
+.categorycontainer{
+    width: 100%;
+    height: 340px;
+    /* margin-left: 3%; */
+    /* display: flex; */
+    overflow-x: auto;
+    display:flex;
+    overflow-y: hidden;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    /* background-color: rebeccapurple; */
+}
+
+

@@ -1,0 +1,163 @@
+.login{
+    width: 38%;
+    margin-left: 31%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+}
+
+.login_form {
+    width: 100%;
+    height: 92%;
+    /* background-color: rgb(178, 206, 178); */
+    background-color: rgb(27, 25, 25);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 0px 3px rgb(175, 174, 174);
+}
+
+.login_form h1{
+    width: 50%;
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(234, 234, 234);
+}
+
+.login_form hr{
+    border: none;
+    height: 1px;
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 120px;
+    background-color: rgb(234, 234, 234);
+}
+
+.login_form  div.inputcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    position: relative;
+    border-radius: 4px;
+    border-color: transparent;
+    outline-color:rgb(234, 234, 234);
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: center;
+    /* background-color: antiquewhite; */
+}
+
+div.inputcontainer input.inputcontainer{
+    display: block;
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    border-color: transparent;
+    outline-color:rgb(234, 234, 234);
+    font-size: 18px;
+    padding: 3px 10px;
+    text-align: center;
+}
+
+div.inputcontainer p{
+    color: rgb(201, 67, 67);
+    font-size: 14px;
+    margin-top: 3px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+div.inputcontainer .eyesign{
+    position: absolute;
+    height: 25px;
+    top: 10px;
+    right: 2%;
+    opacity: 0.6;
+    cursor: pointer;
+    /* background-color: aqua; */
+}
+
+div.inputcontainer .eyesign:hover{
+    opacity: 1;
+}
+
+div.formbtns{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 6%;
+    margin-top: 40px;
+    /* background-color: red; */
+}
+
+.formbtns input.formbtns{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(39, 38, 38);
+    border-radius:8px;
+    cursor: pointer;
+    font-weight: 550;
+    box-shadow: 0px 0px 2px rgb(128, 126, 126);
+} 
+
+.uploading{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(142, 140, 140);
+    z-index: 9999;
+    font-size: 30;
+    opacity: 0.2;
+}
+
+@media(max-width:430px){
+    .login{
+        width: 94%;
+        margin-left: 3%;
+    }
+
+    .login_form{
+        height: 55%;
+        border-radius: 0px;
+        margin-top: 0%;
+        justify-content: center;
+    }
+
+    .login_form hr{
+        margin-bottom: 35px;
+        margin-top: 20px;
+    }
+
+    .login h1{
+        margin-top: 0px;
+        /* background-color: red; */
+    }
+
+    .login_form  div.inputcontainer{
+        margin-bottom: 25px;
+    }
+
+    div.inputcontainer input.inputcontainer{
+        height: 38px;
+    }
+
+    div.inputcontainer p{
+        font-size: 10px;
+    }
+
+    div.formbtns{
+        margin-top: 10px;
+        height: 7%;
+    }
+
+    .formbtns input.formbtns{
+        font-size: 17px;
+    }
+}

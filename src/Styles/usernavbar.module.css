@@ -1,0 +1,162 @@
+.usernavbar{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: rgb(27, 25, 25);
+}
+
+/* .mobile{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(27, 25, 25);
+} */
+
+.usernavbar .logo{
+    width: 18%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(0, 128, 0, 0.588); */
+}
+
+.logo p{
+    width: 100%;
+    font-size: 40px;
+    font-weight: 550;
+    letter-spacing: 3px;
+    color: rgb(234, 234, 234);
+    text-align: center;
+    /* background-color: rebeccapurple; */
+}
+
+.usernavbar .desktopul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 1%;
+    width: 50%;
+    /* background-color: blue; */
+}
+
+.profilesvg{
+    margin-right: 15px;
+    cursor: pointer;
+    fill: whitesmoke;
+}
+
+li{
+    width:fit-content;
+    height: fit-content ;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(234, 234, 234);
+    padding: 8px 12px;
+}
+
+li a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(234, 234, 234);
+    text-transform: capitalize;
+}
+
+li:hover{
+    background-color: rgb(70, 68, 68);
+}
+
+.usernavbar  input{
+    width: 23%;
+    height: 40%;
+    border-radius: 6px;
+    border-width: 0px;
+    outline: 0px;
+    padding: 3px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0% 3% 0% 1%;
+    background-color: rgb(234, 234, 234);
+}
+
+.hidden{
+    display: none;
+}
+
+.profilepicture{
+    width: 52px;
+    height: 52px;
+    margin-right: 15px;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mobileul{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+@media(max-width:430px){
+    .usernavbar .logo{
+        display: none;
+    }
+
+    .profilepicture{
+        display: none;
+    }
+
+    
+    .usernavbar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .usernavbar input{
+        width: 90%;
+        height: 40%;
+        margin: 5px 6% 0px 2%;
+        border-radius: 4px;
+    }
+
+    .usernavbar .desktopul{
+        display: none;
+    }
+
+    .usernavbar .mobileul{
+        display: flex;
+        width: 90%;
+        height: 40%;
+        margin: 0px 6% 5px 2%;
+        /* background-color: rebeccapurple; */
+    }
+
+    .usernavbar ul li{
+        width: calc(100%/4);
+        font-size: 14px;
+    }
+
+    .profilesvg{
+        display: none;
+    }
+
+}
+
