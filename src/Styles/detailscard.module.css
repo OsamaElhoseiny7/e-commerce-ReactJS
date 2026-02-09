@@ -312,8 +312,9 @@ hr.card{
     }
     
     .price p{
-        font-size: 16px;
+        font-size: 18px;
         margin-left: 2px;
+        margin-right: 1px;
         font-weight: 600;
     }
     
