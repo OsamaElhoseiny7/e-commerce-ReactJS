@@ -56,7 +56,7 @@ const Login = () => {
      if(emailStatus && passswordStatus){
       setLoadingState(true)
        try{  
-         const successMSG =  access==='user'? await axios.post('https://e-commerce-2026-production.up.railway.app/user/login',formTextData) : await axios.post('https://e-commerce-2026-production.up.railway.app/admin/login',formTextData)
+         const successMSG =  access==='user'? await axios.post('https://e-commerce-nodejs-production-a535.up.railway.app/user/login',formTextData) : await axios.post('https://e-commerce-nodejs-production-a535.up.railway.app/admin/login',formTextData)
          localStorage.setItem('token',successMSG.data.token)
          handleToken(successMSG.data.token)
          console.log(successMSG)

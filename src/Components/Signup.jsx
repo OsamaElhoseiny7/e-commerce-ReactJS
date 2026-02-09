@@ -52,7 +52,7 @@ const Signup = () => {
       setLoadingState(true)
       try{
         
-          const successMSG =  access==='user'? await axios.post('http://localhost:5000/user/signup',formTextData) : await axios.post('http://localhost:5000/admin/signup',formTextData)
+          const successMSG =  access==='user'? await axios.post('https://e-commerce-nodejs-production-a535.up.railway.app/user/signup',formTextData) : await axios.post('https://e-commerce-nodejs-production-a535.up.railway.app/admin/signup',formTextData)
           localStorage.setItem('token',successMSG.data.token)
           handleToken(successMSG.data.token)
           access==="user"? navTo('/user/homepage') : navTo('/admin/homepage')

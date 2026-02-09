@@ -15,7 +15,7 @@ const ProductsProvider = ({children}) => {
 
     const fetchProducts = async()=>{
          try{
-            const products = await axios.get('https://e-commerce-2026-production.up.railway.app/products')
+            const products = await axios.get('https://e-commerce-nodejs-production-a535.up.railway.app/products')
             setProducts(products.data.products)
             // console.log(vehicles.data.vehicles)
         }
@@ -26,7 +26,7 @@ const ProductsProvider = ({children}) => {
 
     const fetchProductById = async(productId)=>{
            try{
-            const {data} = await axios.get(`https://e-commerce-2026-production.up.railway.app/products/${productId}`)
+            const {data} = await axios.get(`https://e-commerce-nodejs-production-a535.up.railway.app/products/${productId}`)
             setProduct(data.product)
         }
         catch(error){

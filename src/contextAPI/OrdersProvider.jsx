@@ -17,7 +17,7 @@ const OrdersProvider = ({children}) => {
     const fetchUserOrders = async()=>{
         if(!token) return
         try{
-            const {data} = await axios.get('https://e-commerce-2026-production.up.railway.app/user/orders', {headers:{Authorization:`Bearer ${token}`}})
+            const {data} = await axios.get('https://e-commerce-nodejs-production-a535.up.railway.app/user/orders', {headers:{Authorization:`Bearer ${token}`}})
             setOrders(data?.orders)
 
         }

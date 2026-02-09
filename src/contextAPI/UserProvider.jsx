@@ -24,7 +24,7 @@ const UserProvider = ({children}) => {
 
     const fetchUser = async()=>{
         try{
-            const user = await axios.get('https://e-commerce-2026-production.up.railway.app/user/userdata',{headers:{
+            const user = await axios.get('https://e-commerce-nodejs-production-a535.up.railway.app/user/userdata',{headers:{
                         Authorization:`Bearer ${token}`
                     }})
     
@@ -37,7 +37,7 @@ const UserProvider = ({children}) => {
 
     const paymentResult = async(sessionId)=>{
         try{
-            const varification =  await axios.post("https://e-commerce-2026-production.up.railway.app/verify-payment", {sessionId},{headers:{Authorization:`Bearer ${token}`}});
+            const varification =  await axios.post("https://e-commerce-nodejs-production-a535.up.railway.app/verify-payment", {sessionId},{headers:{Authorization:`Bearer ${token}`}});
             fetchUserMethod()
             setLastOrder(varification?.data?.order)
         }
@@ -51,11 +51,11 @@ const UserProvider = ({children}) => {
     const updateFavorites = async(productId, favState)=>{
        if(favState === 'white' ){
            try{
-               await axios.post('https://e-commerce-2026-production.up.railway.app/user/addtofavorites',{productId},{headers:{
+               await axios.post('https://e-commerce-nodejs-production-a535.up.railway.app/user/addtofavorites',{productId},{headers:{
                    Authorization:`Bearer ${token}`
                }})
 
-                const user = await axios.get('https://e-commerce-2026-production.up.railway.app/user/userdata',{headers:{
+                const user = await axios.get('https://e-commerce-nodejs-production-a535.up.railway.app/user/userdata',{headers:{
                         Authorization:`Bearer ${token}`
                     }})
     
@@ -68,10 +68,10 @@ const UserProvider = ({children}) => {
         }
         else{
              try{
-               await axios.post('https://e-commerce-2026-production.up.railway.app/user/removefromfavorites',{productId},{headers:{
+               await axios.post('https://e-commerce-nodejs-production-a535.up.railway.app/user/removefromfavorites',{productId},{headers:{
                    Authorization:`Bearer ${token}`
                }})
-                const user = await axios.get('https://e-commerce-2026-production.up.railway.app/user/userdata',{headers:{
+                const user = await axios.get('https://e-commerce-nodejs-production-a535.up.railway.app/user/userdata',{headers:{
                         Authorization:`Bearer ${token}`
                     }})
     
@@ -87,10 +87,10 @@ const UserProvider = ({children}) => {
 
     const addToCart = async(productId)=>{
            try{
-               await axios.post('https://e-commerce-2026-production.up.railway.app/user/addtocart',{productId},{headers:{
+               await axios.post('https://e-commerce-nodejs-production-a535.up.railway.app/user/addtocart',{productId},{headers:{
                    Authorization:`Bearer ${token}`
                }})
-               const user = await axios.get('https://e-commerce-2026-production.up.railway.app/user/userdata',{headers:{
+               const user = await axios.get('https://e-commerce-nodejs-production-a535.up.railway.app/user/userdata',{headers:{
                         Authorization:`Bearer ${token}`
                     }})
     
@@ -103,10 +103,10 @@ const UserProvider = ({children}) => {
 
     const removeFromCart = async(productId)=>{
            try{
-               await axios.post('https://e-commerce-2026-production.up.railway.app/user/removefromcart',{productId},{headers:{
+               await axios.post('https://e-commerce-nodejs-production-a535.up.railway.app/user/removefromcart',{productId},{headers:{
                    Authorization:`Bearer ${token}`
                }})
-               const user = await axios.get('https://e-commerce-2026-production.up.railway.app/user/userdata',{headers:{
+               const user = await axios.get('https://e-commerce-nodejs-production-a535.up.railway.app/user/userdata',{headers:{
                         Authorization:`Bearer ${token}`
                     }})
     
@@ -119,10 +119,10 @@ const UserProvider = ({children}) => {
 
     const updateUserMethod = async(newData)=>{
          try{
-               await axios.post('https://e-commerce-2026-production.up.railway.app/user/update',newData,{headers:{
+               await axios.post('https://e-commerce-nodejs-production-a535.up.railway.app/user/update',newData,{headers:{
                    Authorization:`Bearer ${token}`
                }})
-               const user = await axios.get('https://e-commerce-2026-production.up.railway.app/user/userdata',{headers:{
+               const user = await axios.get('https://e-commerce-nodejs-production-a535.up.railway.app/user/userdata',{headers:{
                         Authorization:`Bearer ${token}`
                     }})
     
