@@ -52,7 +52,7 @@
     fill: whitesmoke;
 }
 
-li{
+.desktopul li, .mobileul li{
     width:fit-content;
     height: fit-content ;
     /* background-color: rebeccapurple; */
@@ -76,7 +76,7 @@ li a{
     text-transform: capitalize;
 }
 
-li:hover{
+.desktopul li:hover, .mobileul li:hover{
     background-color: rgb(70, 68, 68);
 }
 
