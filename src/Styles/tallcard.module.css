@@ -229,8 +229,18 @@
         line-height: 16px;
     }
 
+    .btns{
+        height: 7%;
+    }
+
+    .tallcard .imgcontainer{
+        height: 59%;
+    }
+
     .cartbtn{
         width: 50%;
+        height: 100%;
+        border: 2px green solid;
     }
 
     .addtocart button{
