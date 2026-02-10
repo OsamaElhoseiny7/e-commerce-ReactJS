@@ -21,20 +21,12 @@ const SearchResult = () => {
     useEffect(()=>{
          initializingVehicles()
     },[])
-
-    // useEffect(()=>{
-    //     const checkURL = window.location.pathname.includes('/user/products/')
-    //     setURL(checkURL)
-    // },[window.location.pathname])
-
-    // console.log(url)
-
    
   return (
     <>
     { !checkURL &&
         <div className={styles.searchcontainer}>
-        <p className={styles.blocktitle}>{'Searched Vehicles'}</p>
+        <p className={styles.blocktitle}>{'Searched Products'}</p>
         <div className={styles.cardscontainer}>
         {searchResults?.slice(0,show).map((product)=>{
             return(
