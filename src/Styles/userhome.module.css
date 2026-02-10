@@ -87,6 +87,10 @@
         font-size: 16px;
         border-radius: 15px;
     }
+
+    .showmore button:hover{
+        color: whitesmoke;
+}
 }
 
 
