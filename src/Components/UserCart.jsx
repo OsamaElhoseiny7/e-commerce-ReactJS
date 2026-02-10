@@ -14,22 +14,28 @@ const UserCart = () => {
     const searchResults = useContext(SearchResults)
     const token = localStorage.getItem('token')
     const [subtotal,setSubtotal] =  useState(0)
+    const [quantity, setQuantity] =  useState(0)
     
     const fetchUserCart = ()=>{
       const cart = currentUser?.cart ?? []
       let totalprice=0;
       let cartItems = []
+      let quantities = 0
       cart?.forEach((item)=>{
         const cartItem = products?.find(product=>product._id===item.productId)
+        quantities += item.quantity
         if(cartItem){
           const fullItem = {...cartItem,'quantity':item.quantity}
           totalprice += fullItem.price * fullItem.quantity
           cartItems = [...cartItems, fullItem]
         }
       })
+      setQuantity(quantities)
       setCart(cartItems)
       setSubtotal(Math.round(totalprice))        
     }
+
+    console.log(cart)
 
     const handlePayment = async()=>{
       try{
@@ -63,10 +69,10 @@ const UserCart = () => {
                 <WideCard key={product._id} product={product}/>
               )})}
           </div>
-          <p className={styles.subtotal}>{`Subtotal (${cart?.length} items): `}<span>${subtotal}</span></p>
+          <p className={styles.subtotal}>{`Subtotal (${quantity} items): `}<span>${subtotal}</span></p>
       </div>
       <div className={styles.right}>
-              <p>{`Subtotal (${cart?.length} items): `}<span>${subtotal}</span></p>
+              <p>{`Subtotal (${quantity} items): `}<span>${subtotal}</span></p>
               <button onClick={handlePayment} className={styles.proceedbtn}>Proceed to checkout</button>
       </div>
     </>
