@@ -141,9 +141,9 @@ const WideCard = ({product}) => {
                 </div>
                             
             </div>
-                <div className={styles.price}>
-                    <p>${product.price}</p>
-                </div>
+            <div className={styles.price}>
+                <p>${product.price}</p>
+            </div>
         </div>
         {loadingState && <div className={styles.uploading}></div>}
     </>

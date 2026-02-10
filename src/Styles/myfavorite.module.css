@@ -56,4 +56,62 @@
     color: rgb(234, 234, 234);
 }
 
+@media(max-width:430px){
+.fav{
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 25px;
+    background-color: rgb(27, 25, 25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.favtitle{
+    width: 90%;
+    height: 4vh;
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: rgb(234, 234, 234);
+    margin-right: 0%;
+    /* background-color: rebeccapurple;    */
+}
+
+.fav hr{
+    border: none;
+    width: 90%;
+    height: 0.5px;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+.favtitle svg{
+    margin-right: 5px;
+    fill: rgb(224, 64, 64);
+    width: 15px;
+    height: 15px;
+}
+
+.favcontainer{
+    width: 90%;
+    background-color: rgb(27, 25, 25);
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.favcontainer .favnum{
+    width: 100%;
+    height: 5vh;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 5%;
+    margin: 40px 0px 40px 3.4%;
+    color: rgb(234, 234, 234);
+}
+}
