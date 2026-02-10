@@ -5,6 +5,7 @@
     display: flex;
     margin-top: 40px;
     justify-content: center;
+    /* background-color: rebeccapurple; */
 }
 
 .leftblock{
@@ -488,3 +489,375 @@
 }
 
 
+
+
+@media(max-width:430px){
+.profilecontainer{
+    width: 92%;
+    margin-left: 4%;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.leftblock{
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.rightblock{
+    width: 100%;
+    border-radius: 30px;
+    border-radius: 12px;
+    margin-left: 0%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.leftblock .profileimg{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 0px black;
+}
+
+.profileimg .leftimg{
+    width: 85%;
+    height: 70%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.leftimg label{
+    width: 20px;
+    height: 20px;
+    left: 165px;
+    top: 49%;
+    border: 1px whitesmoke solid;
+}
+
+.leftimg .profileimgcontainer{
+    width: 95px;
+    height: 95px;
+}
+
+.leftimg svg{
+    width: 95px;
+    height: 95px;
+}
+
+.leftimg .imgtext{
+    width: 85%;
+    height: 35%;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.imgtext .name{
+    font-size: 17px;
+    height: fit-content;
+    margin: 3px 0px;
+}
+
+.imgtext .email{
+    height: fit-content;
+    font-size: 13px;
+    justify-content: center;
+}
+
+.email svg{
+    width: 15px;
+    height: 15px;
+    margin-right: 4px;
+}
+
+.profileimg .rightimg{
+    width: 85%;
+    height: 12%;
+    margin: 0%;
+    align-self: center;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightimg .savebtn, .rightimg .cancelbtn{
+    height: 85%;
+    font-size: 12px;
+    font-weight: 600;
+    width: 20%;
+}
+
+.rightimg .savebtn{
+    margin-right: 20px;
+}
+
+.rightimg .cancelbtn{
+    box-shadow: 0px 0px 0px ;
+}
+
+.userinfo{
+    width: 100%;
+    height: 50vh;
+    margin-top: 30px;
+    background-color: rgb(27, 25, 25);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px black;
+}
+
+.userinfo p, .password p{
+    width: 100%;
+    height: 16%;
+    background-color: rgb(40, 38, 38);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    color: rgb(234, 234, 234);
+}
+
+.userinfo p{
+    height: 14%;
+    font-weight: 550;
+}
+
+.userinfo .edituser{
+    width: 92%;
+    height: 80%;
+    margin-top: 3%;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: gold; */
+}
+
+.edituser .left, .edituser .right{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: blue; */
+}
+
+.right .top, .right .bottom, .left .top, .left .bottom{
+    width: 100%;
+    height: 48%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    /* background-color: rgb(180, 175, 175); */
+}
+
+.edituser label, .edituser  input{
+    width: 100%;
+}
+
+.edituser label{
+    height: 35%;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    color: rgb(234, 234, 234);
+    /* margin-bottom: 5px   ; */
+}
+
+.edituser input{
+    height: 48%;
+    margin-top: 1%;
+    outline:0px solid;
+    border-width: 0px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px black;
+    padding: 0px 10px;   
+    font-size: 12px;
+    font-weight: 500;
+    background-color: rgb(39, 38, 38);
+    color: rgb(234, 234, 234);
+    /* background-color: rgba(245, 245, 245, 0.778); */
+    
+}
+
+.edituser .right .bottom{
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: green; */
+}
+
+.edituser .right .bottom .left, .edituser .right .bottom .right{
+    width: 48%;
+    height: 80%;
+    color: black;
+    /* background-color: rebeccapurple; */
+}
+
+.edituser .right .bottom select{
+    height: 55%;
+    outline-width: 0px;
+    border-width: 0px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 1px black;
+    padding: 0px 10px;   
+    font-size: 12px;
+    padding-right: 10px;
+    background-color: rgb(39, 38, 38);
+    color: rgb(231, 230, 230);
+}
+
+
+.password{
+    margin-top: 30px;
+}
+
+.password p{
+    height: 20%;
+    font-size: 16px;
+}
+
+.password div{
+    width: 92%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.password div input{
+    height: 25%;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.password div input[type='button']{
+    height: 18%;
+    width: 25%;
+    font-size: 12px;
+    border-radius: 15px;
+    margin: 0px;
+}
+
+.rightblock .fav, .rightblock .cart{
+    width: 48%;
+    height: 40vh;
+    background-color: rgb(27, 25, 25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0px 0px 6px black;
+}
+
+.rightblock .cart{
+    margin-top: 0px;
+}
+
+.fav .head, .cart .head{
+    height: 8%;
+    font-size: 16px;
+    font-weight: 600;
+    width: 85%;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    border-radius: 0px;
+    /* border-top-left-radius: 12px;
+    border-top-right-radius: 12px; */
+    color: rgb(234, 234, 234);
+    /* background-color: gray; */
+}
+
+.fav .head svg{
+    width: 14px;
+    height: 14px;
+    fill: rgb(207, 62, 62);
+    margin-right: 10px;
+}
+
+.imgcontainer{
+    width: 85%;
+    height: 48%;
+    margin-bottom: 3%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    /* background-color: rgb(198, 196, 196); */
+}
+
+ .imgcontainer .imgbg{
+    position: absolute;
+    inset: 0;
+    transition: background-color 0.3s ease;
+}
+
+.imgcontainer .widecardimg{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    z-index: 999;
+}
+
+.fav .title, .cart .title{
+    width: 85%;
+    max-height: 11%;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(234, 234, 234);
+    overflow:hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    cursor: pointer;
+    /* background-color: rebeccapurple ; */
+}
+
+.fav .price, .cart .price{
+    width: 86%;
+    height: 7%;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgb(234, 234, 234);
+    margin-top: 3%;
+    /* background-color: aliceblue; */
+}
+
+.cart .empty, .fav .empty{
+    display: none;
+}
+
+.fav button, .cart button{
+    width: 80%;
+    margin-top: 7%;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 0px;
+}
+
+.fav button:hover, .cart button:hover{
+    background-color: rgba(0, 128, 0, 0.686);
+    box-shadow: 0px 0px 6px transparent;
+    color: rgb(234, 234, 234);
+}
+
+
+}

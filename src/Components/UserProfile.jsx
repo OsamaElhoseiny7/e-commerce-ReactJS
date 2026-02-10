@@ -228,7 +228,7 @@ const UserProfile = () => {
             </div>
 
             <div className={styles.rightimg}>
-              <button className={styles.savebtn} onClick={handelSubmit}>Save Changes</button>
+              <button className={styles.savebtn} onClick={handelSubmit}>Save</button>
               <button className={styles.cancelbtn}>Cencel</button>
             </div>
           </div>
@@ -289,7 +289,7 @@ const UserProfile = () => {
             <div>
               <input type="passowrd" name="newpass" id="newpass" placeholder="🔐 New Password" />
               <input type="password" name="confirm" id="confirm" placeholder="🔐 Confirm New Password"/>
-              <input type="button" value='Update Password' onClick={handlePassword}/>
+              <input type="button" value='Update' onClick={handlePassword}/>
             </div>
            </div>
         </div>
