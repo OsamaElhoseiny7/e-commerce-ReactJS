@@ -41,7 +41,7 @@ const UserCart = () => {
       );
       return;
     }
-        const {data} = await axios.post("http://localhost:5000/create-checkout-session", {cart},{headers:{Authorization:`Bearer ${token}`}})
+        const {data} = await axios.post("https://e-commerce-nodejs-production-a535.up.railway.app/create-checkout-session", {cart},{headers:{Authorization:`Bearer ${token}`}})
         console.log(data.url)
         window.location.href = data.url     
     }
