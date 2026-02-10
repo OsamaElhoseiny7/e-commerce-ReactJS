@@ -8,13 +8,13 @@ const Categories = () => {
     const [show, setShow]  = useState(0)
     const products = useContext(ProductsData)
     const searchResults = useContext(SearchResults)
-    const [pageHeight, setPageHeight] = useState(window.innerWidth)
+    const [pageWidth, setPageWidth] = useState(window.innerWidth)
     const categories = ['T-Shirts','Pants','Jackets','Hoodies','Dresses','Shoes','Socks','Accesorries','Suites']
     const [category, setCategory] = useState([])
 
 
     const initializingProducts = ()=>{
-        if(pageHeight<=430){
+        if(pageWidth<=430){
             category?.length>=4 ? setShow(4) : setShow(category?.length)
         }
         else{
@@ -23,7 +23,7 @@ const Categories = () => {
     }
 
     const handleShow = ()=>{
-        if(pageHeight<=430){
+        if(pageWidth<=430){
             show===category?.length ? setShow(4) : show+4 > category?.length ? setShow(category?.length) : setShow(show+4)
         }
         else{
@@ -39,7 +39,7 @@ const Categories = () => {
 
     useEffect(()=>{
         category.length!==0 && initializingProducts()
-    },[category, pageHeight])
+    },[category, pageWidth])
 
     useEffect(()=>{
         const tshirts = products?.filter((product)=>product?.category==='T-Shirts')

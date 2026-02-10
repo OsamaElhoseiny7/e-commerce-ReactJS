@@ -15,7 +15,7 @@ const OrderBlock = ({order}) => {
     console.log(active)
 
   return (
-        <div className={styles.orderblock}  style={{marginBottom: active&&60+'px'}}>
+        <div className={styles.orderblock}  style={{marginBottom: active&&40+'px'}}>
             <div className={styles.orderdetails}>
                 <p className={styles.orderid} onClick={handleClick}>Order: {orederId}</p>
                 <hr />

@@ -1,6 +1,7 @@
 .searchcontainer{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     width: 95%;
     position: relative;
     margin: 40px 2.5% 0px;
@@ -10,25 +11,22 @@
 .searchcontainer .cardscontainer{
     display: flex;
     flex-wrap: wrap;
-    width: 95%;
     position: relative;
-    /* margin: 30px 2.4% 0px 3.6%; */
-    width: 94%;
-    margin-left: 3.5%;
+    width: 95%;
+    margin-left: 1%;
     /* background-color: rebeccapurple; */
 }
 
 .searchcontainer .blocktitle{
     height: 6vh;
+    width: 94.5%;
     margin-bottom: 25px;
     margin-top: 30px;
-    margin-left:3.5%;
-    margin-right: 60%;
     letter-spacing: 4px;
     font-size: 30px;
     font-weight: 600;
     color: rgb(234, 234, 234);
-    /* background-color: red; */
+    /* background-color: aliceblue; */
 }
 
 .uploading{
@@ -72,27 +70,23 @@
 
 @media(max-width:430px){
 .searchcontainer{
-    margin: 25px 2.5% 0px;
+    margin: 20px 2.5% 0px;
 }
 
 .searchcontainer .cardscontainer{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 95%;
     position: relative;
-    width: 94%;
+    width: 95%;
+    margin-left: 1%;
 }
 
 .searchcontainer .blocktitle{
     height: 4vh;
-    width: 50%;
-    margin-bottom: 25px;
-    margin-top: 30px;
-    margin-left:3.5%;
-    margin-right: 60%;
-    letter-spacing: 4px;
+    margin: 10px 0px;
+    letter-spacing: 2px;
     font-size: 16px;
-    background-color: red;
 }
 
 .showmore{

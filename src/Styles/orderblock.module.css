@@ -1,10 +1,8 @@
 .orderblock{
-    width: 91%;
+    width: 92%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* margin-bottom: 20px; */
-    /* background-color: rebeccapurple ; */
 }
 
 .orderdetails{
@@ -55,4 +53,38 @@
     color: whitesmoke;
     background-color: rgb(39, 38, 38);
     padding: 10px;
+}
+
+@media(max-width:430px){
+.orderblock{
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    /* background-color: rebeccapurple ; */
+}
+
+.orderdetails{
+    justify-content: space-between;
+    margin-bottom: 10px;
+    /* background-color: rebeccapurple; */
+}
+
+.orderdetails hr{
+    margin: 10px 0px;
+}
+
+.orderdetails p:first-of-type{
+    font-size: 12px;
+}
+
+.orderblock .orderdetails div{
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+.orderdetails div p{
+    font-size: 12px;
+    background-color: transparent;
+    padding: 4px;
+}
 }

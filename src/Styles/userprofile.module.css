@@ -712,6 +712,7 @@
     display: flex;
     align-items: center;
     color: rgb(234, 234, 234);
+    padding-left: 3px;
     /* margin-bottom: 5px   ; */
 }
 
