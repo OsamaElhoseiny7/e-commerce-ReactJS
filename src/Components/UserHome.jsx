@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react"
 import styles from '../Styles/userhome.module.css'
 import TallCard from "./TallCard"
 import { SearchResults, ProductsData } from "../contextAPI/ProductsProvider"
+import axios from "axios"
 
 const UserHome = () => {
 
@@ -47,7 +48,24 @@ const UserHome = () => {
         } else {
           setShow(products.length >= 5 ? 5 : products.length);
         }
+    
+
     },[products, width])
+
+    useEffect(()=>{
+
+      const r=async()=>{
+
+        try{
+        const x=  await axios.get('https://book-store-api-mu.vercel.app/Books')
+        console.log(x)
+      }
+      catch(error){
+        console.log(error)
+      }
+      }
+      r()
+    },[])
 
 
    
