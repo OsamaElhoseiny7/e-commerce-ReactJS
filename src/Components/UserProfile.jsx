@@ -234,10 +234,10 @@ const UserProfile = () => {
 
             <div className={styles.rightimg}>
               <div className={styles.rightimgbtns}>
-                <button className={styles.savebtn} onClick={handelSubmit}>Save</button>
+                <button className={styles.savebtn} onClick={handelSubmit}>Save Changes</button>
                 <button className={styles.cancelbtn}>Cencel</button>
               </div>
-              <button onClick={handleLogout} className={styles.logoutbtn}>Log out</button>
+              <button onClick={handleLogout} className={styles.logoutbtn}>Log Out</button>
             </div>
           </div>
           <div className={styles.userinfo}>
