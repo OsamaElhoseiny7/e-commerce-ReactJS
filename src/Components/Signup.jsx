@@ -16,11 +16,13 @@ const Signup = () => {
   const [passwordChecker, setPasswordChecker] = useState(true)
   const [userNameChecker, setUserNameChecker] = useState(true)
   const [loadingState,setLoadingState] =  useState(false)
+  const token = localStorage.getItem('token')
   
   
   
   useEffect(()=>{
     window.location.pathname.startsWith('/admin') ? setAccess('admin') : (window.location.pathname.startsWith('/user') || window.location.pathname==='/')  ? setAccess('user') : console.log('no user or admin is here!')
+     token && navTo('/user/home')
   },[])
   
   const handleTextChange = (event)=>{

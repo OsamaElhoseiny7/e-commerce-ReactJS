@@ -185,6 +185,11 @@ const UserProfile = () => {
       setUserRegion((prev)=>({...prev, country:countryData?.country}))
     }
 
+    const handleLogout = ()=>{
+      localStorage.removeItem('token')
+      navTo('/user/login')
+    }
+
     const handleCityChange = (event)=>{
       const currentCity = event.target.value
       setUserRegion((prev)=>({...prev, city:currentCity}))
@@ -228,8 +233,11 @@ const UserProfile = () => {
             </div>
 
             <div className={styles.rightimg}>
-              <button className={styles.savebtn} onClick={handelSubmit}>Save</button>
-              <button className={styles.cancelbtn}>Cencel</button>
+              <div className={styles.rightimgbtns}>
+                <button className={styles.savebtn} onClick={handelSubmit}>Save</button>
+                <button className={styles.cancelbtn}>Cencel</button>
+              </div>
+              <button onClick={handleLogout} className={styles.logoutbtn}>Log out</button>
             </div>
           </div>
           <div className={styles.userinfo}>
