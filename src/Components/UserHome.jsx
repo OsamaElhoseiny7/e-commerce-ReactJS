@@ -51,23 +51,6 @@ const UserHome = () => {
     
 
     },[products, width])
-
-    useEffect(()=>{
-
-      const r=async()=>{
-
-        try{
-        const x=  await axios.get('https://book-store-api-mu.vercel.app/Books')
-        console.log(x)
-      }
-      catch(error){
-        console.log(error)
-      }
-      }
-      r()
-    },[])
-
-
    
   return (
     <>
