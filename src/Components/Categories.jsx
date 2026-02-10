@@ -32,7 +32,7 @@ const Categories = () => {
     useEffect(()=>{
         const tshirts = products?.filter((product)=>product?.category==='T-Shirts')
         setCategory(tshirts) 
-    },[])
+    },[products])
 
    
   return (
