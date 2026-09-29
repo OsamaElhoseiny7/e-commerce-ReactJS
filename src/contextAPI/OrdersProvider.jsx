@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import axios from 'axios'
-import { Children } from "react";
+// import { Children } from "react";
 import { FetchUser } from "./UserProvider";
 
 
@@ -17,7 +17,7 @@ const OrdersProvider = ({children}) => {
     const fetchUserOrders = async()=>{
         if(!token) return
         try{
-            const {data} = await axios.get('https://e-commerce-nodejs-production-a535.up.railway.app/user/orders', {headers:{Authorization:`Bearer ${token}`}})
+            const {data} = await axios.get('https://e-commerce-nodejs-2026-vmjb.vercel.app/user/orders', {headers:{Authorization:`Bearer ${token}`}})
             setOrders(data?.orders)
 
         }

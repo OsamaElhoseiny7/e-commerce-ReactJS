@@ -170,12 +170,13 @@
 }
 
 .rightimg .savebtn{
-    width: 52%;
+    width: 59%;
     background-color: rgba(0, 128, 0, 0.686);
     color: rgb(234, 234, 234);
 }
 
 .rightimg .cancelbtn{
+    width: 39%;
     background-color: rgb(39, 38, 38);
     color: rgb(234, 234, 234);
     box-shadow: 0px 0px 4px rgba(128, 128, 128, 0.625);
